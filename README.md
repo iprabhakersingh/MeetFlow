@@ -1,138 +1,87 @@
 🎥 MeetFlow — Real-Time Video Conferencing App
 
-MeetFlow is a real-time video conferencing web application built using the MERN stack, WebRTC, and Socket.IO. It allows users to instantly join meetings via a shared link, communicate through live video/audio, chat in real time, and share screens — all directly in the browser.
+MeetFlow is a real-time video conferencing web application built using the MERN stack, WebRTC, and Socket.IO. It allows users to instantly join meetings via a shared link and communicate through live video/audio, in-meeting chat, and screen sharing — all directly in the browser.
 
-🚀 Live Demo:
-👉 https://meetflow-frontend.onrender.com/
+🚀 Live Demo  
+https://meetflow-frontend.onrender.com/
+
 
 ✨ Features
 
-🔴 Real-time Video & Audio Calling (WebRTC)
+🔴 Real-time video & audio communication  
+👥 Multi-user video conferencing  
+💬 Live chat during meetings  
+🎥 Camera on/off toggle  
+🎙️ Microphone mute/unmute  
+🖥️ Screen sharing support  
+🔗 Join meeting via URL  
+⚡ Low-latency real-time communication  
+🌐 Cloud deployed application  
 
-👥 Multi-user conferencing
-
-💬 Live chat during meetings
-
-🎥 Camera on/off control
-
-🎙️ Microphone mute/unmute
-
-🖥️ Screen sharing support
-
-🔗 Join meeting via URL
-
-⚡ Low-latency communication using Socket.IO
-
-🌐 Fully deployed on Render
 
 🛠️ Tech Stack
-Frontend
 
-React.js
+- ⚛️ React.js
+- 🟢 Node.js
+- 🚂 Express.js
+- 🍃 MongoDB
+- 📡 WebRTC
+- 🔌 Socket.IO
+- 🎨 Material UI
+- ☁️ Render
 
-Material UI (MUI)
-
-WebRTC
-
-Socket.IO Client
-
-CSS Modules
-
-Backend
-
-Node.js
-
-Express.js
-
-Socket.IO
-
-WebRTC Signaling Server
-
-Database
-
-MongoDB (for extensibility / future enhancements)
-
-Deployment
-
-Render (Frontend & Backend)
 
 🔄 How It Works
 
-User enters a username and joins the lobby
-
-A unique meeting URL is used to connect participants
-
-Socket.IO handles signaling between peers
-
-WebRTC establishes peer-to-peer media connections
-
-Users can:
-
-Toggle video/audio
-
-Share screen
-
-Chat in real time
-
-When a user leaves, streams are automatically updated
-
-⚙️ Installation & Setup (Local)
-1️⃣ Clone the repository
-git clone https://github.com/your-username/meetflow.git
-cd meetflow
-
-2️⃣ Install dependencies
-
-Frontend
-
-cd frontend
-npm install
-npm start
+1. User enters a username and joins the lobby  
+2. A meeting URL connects all participants  
+3. Socket.IO handles real-time signaling  
+4. WebRTC establishes peer-to-peer media streams  
+5. Users can control camera, microphone, screen sharing, and chat  
+6. Streams update automatically when users join or leave  
 
 
-Backend
+⚙️ Installation & Setup
 
-cd backend
-npm install
-npm start
+Clone the repository  
+git clone https://github.com/your-username/meetflow.git  
+cd meetflow  
 
-🔐 Environment Variables
-
-Create a .env file in the backend directory:
-
-PORT=8000
+Install dependencies and start the application  
+npm install  
+npm start  
 
 
-Frontend environment config example:
+🔐 Environment Configuration
 
-const server = process.env.NODE_ENV === "production"
-  ? "https://your-backend-url.onrender.com"
-  : "http://localhost:8000";
+PORT=8000  
+
+Server configuration logic  
+
+const server =
+  process.env.NODE_ENV === "production"
+    ? "https://your-backend-url.onrender.com"
+    : "http://localhost:8000";
 
 export default server;
 
+
 🌍 Deployment
 
-Frontend deployed on Render
-
-Backend deployed on Render
-
-WebRTC uses Google STUN servers for NAT traversal
+Deployed on Render  
+Real-time communication using Socket.IO  
+Peer-to-peer media streaming with WebRTC  
+Google STUN servers used for NAT traversal  
 
 🚀 Future Enhancements
 
-🔒 Authentication & private rooms
-
-📹 Meeting recording
-
-👨‍💼 Host controls
-
-📱 Mobile responsiveness improvements
-
-📊 Meeting analytics
-
-🗂️ MongoDB-based meeting history
+🔒 User authentication & private rooms  
+📹 Meeting recording  
+👨‍💼 Host controls  
+📱 Improved mobile responsiveness  
+📊 Meeting analytics  
+🗂️ Persistent meeting storage  
 
 👨‍💻 Developer
 
-Prabhaker Singh
+Prabhaker Singh  
