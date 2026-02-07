@@ -44,7 +44,7 @@ https://meetflow-frontend.onrender.com/
 ⚙️ Installation & Setup
 
 Clone the repository  
-git clone https://github.com/your-username/meetflow.git  
+git clone https://github.com/iprabhakersingh/MeetFlow.git  
 cd meetflow  
 
 Install dependencies and start the application  
